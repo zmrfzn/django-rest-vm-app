@@ -15,9 +15,14 @@ create a new database named `vm-app` in your postgres server.
 > NOTE: DB Name is based on [settings.py](./django-rest-vm-app/blob/main/DjangoRestPgSQL/settings.py)! configurations
 
 
-Create the DB tables first:
+First Create the DB tables:
 ```
 python manage.py migrate
+```
+
+Seed the database:
+```
+python manage.py loaddata seed-data.json.gz
 ```
 
 ### Setup New Relic Agent
