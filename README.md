@@ -3,41 +3,40 @@
 ## Setup application 
 
 ### Install packages
-Install all the packages, preferably in a virtual environment 
+To get started, install all the necessary packages, preferably within a virtual environment. Run the following command in your project directory:
 
-```
+```bash
 pip install -r requirements.txt
 ```
 
 ### Setup Database
 
-create a new database named `vm-app` in your postgres server. 
-> NOTE: DB Name is based on [settings.py](./django-rest-vm-app/blob/main/DjangoRestPgSQL/settings.py)! configurations
-
-
-First Create the DB tables:
-```
+1. Create a new PostgreSQL database named vm-app on your PostgreSQL server. Ensure that the database name matches the configuration specified in [settings.py](./DjangoRestPgSQL/settings.py).
+2. Create the database tables by running the following command:
+   
+```bash
 python manage.py migrate
 ```
 
-Seed the database:
-```
+3. Seed the database with initial data:
+```bash
 python manage.py loaddata seed-data.json.gz
 ```
 
 ### Setup New Relic Agent
 
-Configure ENV variables for New Relic agent
+configure environment variables for the New Relic agent as follows:
 
-```
+```bash
 EXPORT NEW_RELIC_APP_NAME=YOUR_APP_NAME
 EXPORT NEW_RELIC_LICENSE_KEY=YOUR_INGEST_LICENSE_KEY
 ```
 
 ## Running the Application
 
-Run the development web server with new relic agent:
+To run the development web server with the New Relic agent, execute the following command:
 ```
 NEW_RELIC_CONFIG_FILE=newrelic.ini newrelic-admin run-program python manage.py runserver 8080
 ```
-Open the URL http://localhost:8080/ to access the application.
+
+You can access the application by opening the following URL in your web browser: http://localhost:8080/
