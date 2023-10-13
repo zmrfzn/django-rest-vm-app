@@ -1,0 +1,36 @@
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+*.swp
+*.pyc
+.DS_Store
+/.coverage
+/dist/
+/build/
+/MANIFEST
+/wagtail.egg-info/
+/docs/_build/
+/.tox/
+/venv
+/node_modules/
+npm-debug.log*
+*.idea/
+/*.egg/
+/.cache/
+/.pytest_cache/
+
+
+### vscode
+.vscode
+
+### Django ###
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+
+.env
+db.sqlite3

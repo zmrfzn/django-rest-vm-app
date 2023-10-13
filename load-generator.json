@@ -1,0 +1,9 @@
+{
+    "pause": 10000,
+    "workers": 1,
+    "timeout": 1000,
+    "urls": [
+    "http://127.0.0.1:8080/api/tutorials",
+    "http://127.0.0.1:8080/api/tutorials/4"
+    ]
+  }
