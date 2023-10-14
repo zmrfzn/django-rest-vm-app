@@ -88,12 +88,12 @@ WSGI_APPLICATION = 'DjangoRestPgSQL.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'vm-app',
-        'USER': 'postgres',
-        'PASSWORD': '123',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'vm_sca_app',
+        'USER': 'root',
+        'PASSWORD': 'my-secret-pw',
         'HOST': '127.0.0.1',
-        'PORT': '5432',
+        'PORT': '3306',
     }
 }
 

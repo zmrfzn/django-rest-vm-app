@@ -1,4 +1,4 @@
-# Django Restful CRUD API with PostgreSQL example
+# Django Restful API with MySQL example for New Relic VM
 
 ## Setup application 
 
