@@ -5,7 +5,7 @@ django-filter==23.3
 django-upgrade==1.15.0
 djangorestframework==3.11.2
 Markdown==3.5
-newrelic==9.1.0
+newrelic==9.1.1
 PyMySQL==1.1.0
 pytz==2023.3.post1
 sqlparse==0.4.1
